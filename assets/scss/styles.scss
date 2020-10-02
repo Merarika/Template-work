@@ -1,0 +1,240 @@
+@import 'variables';
+
+@font-face {
+ 	font-family: 'Montserrat';
+ 	src: url(../fonts/Montserrat.ttf) format('truetype');
+}
+
+@font-face {
+ 	font-family: 'Montserrat-Black';
+ 	src: url(../fonts/Montserrat-Black.ttf) format('truetype');
+}
+
+@font-face {
+ 	font-family: 'OpenSans';
+ 	src: url(../fonts/OpenSans.ttf) format('truetype');
+}
+
+*, :before, :after {
+	box-sizing: border-box;
+}
+
+
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: $fs-default;
+}
+
+menu {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	letter-spacing: 1.2px;
+	cursor: pointer;
+}
+
+input, textarea {
+	outline: none;
+	font-family: 'OpenSans';
+}
+
+.p-top-section {
+	padding-top: 6%;
+}
+
+.p-bottom-section {
+	padding-bottom: 5%;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-none {
+	display: none;
+}
+
+.m-auto {
+	margin: auto;
+}
+
+.m-left-auto {
+	margin-left: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.jc-center {
+	justify-content: center;
+}
+
+.ai-center {
+	align-items: center;
+}
+
+.ai-end {
+	align-items: flex-end;
+}
+
+.ai-start {
+	align-items: flex-start;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.flex-no-shrink {
+	flex-shrink: 0;
+}
+
+.myContainer {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+}
+
+.content {
+	width: clamp(300px,90vw,1173px);
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 25px;
+}
+
+.col {
+	padding: 0 15px;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-33 {
+	width: calc(100% / 3);
+}
+
+.w-25 {
+	width: calc(100% / 4);
+}
+
+.w-75 {
+	width: 75%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.w-auto {
+	width: auto;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+.p-fixed {
+	position: fixed;
+}
+
+.zi-1 {
+	z-index: 1;
+}
+
+.zi-5 {
+	z-index: 5;
+}
+
+.zi-10 {
+	z-index: 10;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+	.myContainer {
+		max-width: 1200px;
+	}
+
+}
+
+@media (max-width: 992px) {
+
+	.myContainer {
+		max-width: 992px;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.myContainer {
+		max-width: 768px;
+	}
+}

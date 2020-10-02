@@ -1,0 +1,100 @@
+ul.menu {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  clear: both;
+  display: table;
+  opacity: 0.9;
+  font-size: 14px;
+  font-family: "OpenSans";
+}
+ul.menu .list {
+  letter-spacing: 0.7px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  opacity: 0.38;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin: 5px 0;
+  vertical-align: sub;
+  background: inherit;
+  clear: both;
+}
+ul.menu .list:after {
+  content: "\f067";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 0px 5px;
+  color: #fff;
+}
+ul.menu .list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 13px;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+}
+ul.menu .list a:hover {
+  background-color: #324252;
+  transition: 300ms all;
+}
+ul.menu .list .items {
+  height: 0px;
+  overflow: hidden;
+}
+ul.menu .list .items a {
+  text-transform: none;
+  height: 45px;
+}
+ul.menu .list .items a:hover {
+  background-color: #3f5d79;
+  color: #fff;
+  transition: 300ms all;
+}
+/*ul.menu .list:last-child {
+  border-bottom: none;
+}*/
+ul.menu .active:after {
+  content: "\f068";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 0px 5px;
+  color: #fff;
+}
+
+ul.menu .active > .items {
+  display: block;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #fff;
+  padding: 0px;
+  margin-bottom: 5px;
+  height: auto;
+  color: #fff;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 200ms;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+ul.menu .active > .items li {
+  padding: 0px;
+  list-style: none;
+}
+/*ul.menu .active > .items li:last-child {
+  border-color: transparent;
+  padding-bottom: 0px;
+}*/
+
+ul.menu .active .list {
+  background: #697d92;
+}
+ul.menu .active .list a {
+  /*padding: 17px 0px 17px 45px;*/
+}
